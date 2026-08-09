@@ -517,7 +517,7 @@
   <h1>투빈맘's 초3💖<br>엄마표 로드맵 한눈에</h1>
   <p class="hero-sub">학원 없이 엄마표로 가고 있는 경빈이,<br>3월부터 여름방학까지 실제로 했던 루틴 전부 기록했어요</p>
   <div class="hero-rail">
-    <b>3~5월 전과목 안정화</b><i>→</i><b>5월~ 최상위 집중</b><i>→</i><b>여름방학 영어 재가동</b>
+    <b>3~5월 전과목 안정화</b><i>→</i><b>5월~7월 최상위 집중</b><i>→</i><b>여름방학 영어 재가동</b>
   </div>
   <div class="hero-actions">
     <a class="insta" href="https://www.instagram.com/2bin_mom/?hl=ko" target="_blank" rel="noopener">📸 @2bin_mom 인스타 보러가기</a>
@@ -528,7 +528,7 @@
 <nav class="toc">
   <a href="#guide" onclick="showTab('guide', event)">📖 가이드</a>
   <a href="#p1" onclick="showTab('p1', event)">1️⃣ 3~5월</a>
-  <a href="#p2" onclick="showTab('p2', event)">2️⃣ 5월~</a>
+  <a href="#p2" onclick="showTab('p2', event)">2️⃣ 5월~7월</a>
   <a href="#p3" onclick="showTab('p3', event)">3️⃣ 여름방학</a>
   <a href="#growth" onclick="showTab('growth', event)">📊 변화</a>
   <a href="#books" onclick="showTab('books', event)">📚 교재</a>
@@ -657,89 +657,89 @@ if ("scrollRestoration" in history) history.scrollRestoration = "manual";
    ══════════════════════════════════════════════════════════ */
 const BOOKS = {
   /* ── 수학 ── */
-  deokle:{cat:"math", img:"9599820c.png", subject:"수학", name:"필즈 더클셈 (초5~6 과정)",
+  deokle:{cat:"math", img:"9599820c.png", subject:"연산 · 빠른 선행", name:"필즈 더클셈 (초5~6 과정)",
     phaseLabel:"3월부터 쭈욱~",
     role:"연산 속도 + 정확도 끌어올리는 상위 레벨 훈련용", when:"하루 1장",
     pts:["학년보다 높은 연산으로 두뇌 체력 미리 만들어주기","매일 루틴으로 짧게 → 속도감 유지하는 용도","\"생각 없이 푸는 연산\"이 아니라 집중력 훈련용으로 활용"],
     kw:"필즈 더클셈 연산 선행 심화", link:"", linkType:"none"},
-  yeonsan42:{cat:"math", img:"1d4671eb.png", subject:"수학", name:"바빠 교과서 연산 4-2",
+  yeonsan42:{cat:"math", img:"1d4671eb.png", subject:"연산 · 보완", name:"바빠 교과서 연산 4-2",
     role:"교과 기반 연산을 안정적으로 다지는 기본기 교재", when:"하루 1바닥",
     pts:["분수 등 헷갈리는 부분 보완 → 개념 안정용 연산","개념 연결된 연산이라 실수 줄이기에 효과적","더클셈과 병행 → 속도 + 정확도 균형 잡기"],
     kw:"바빠 교과서연산 이지스에듀 4-2 분수", link:"https://link.coupang.com/a/euaVxA", linkType:"coupang"},
-  leader32:{cat:"math", img:"356d909f.png", subject:"수학", name:"수학 리더 기본+응용 3-2",
+  leader32:{cat:"math", img:"356d909f.png", subject:"교과 기본+응용", name:"수학 리더 기본+응용 3-2",
     role:"3학년 2학기 개념 + 기본 응용까지 연결하는 교과서형 문제집", when:"하루 1.5~2장",
     pts:["한 학기 선행으로 3-2 전체 흐름 미리 잡기","설명 → 예제 → 응용 구조라 엄마표 설명하기 수월","\"처음 배우는 단원\"은 이걸로 시작하면 안정적"],
     kw:"수학리더 기본응용 천재교육 3-2 교과", link:"https://link.coupang.com/a/euaPpM", linkType:"coupang"},
-  jump31:{cat:"math", img:"ext_82798.jpg", subject:"수학", name:"점프왕 수학 최상위 3-1",
+  jump31:{cat:"math", img:"ext_82798.jpg", subject:"교과수학 · 최상위", name:"점프왕 수학 최상위 3-1",
     role:"현재 배우는 단원의 심화 + 사고력 확장", when:"하루 1바닥~1장",
     pts:["학교 진도 맞춰서 현행 심화용으로 활용","한 문제씩 천천히 → 사고 과정 설명 연습","틀린 문제는 꼭 복기 → \"왜 틀렸는지\" 말하게 하기"],
     kw:"점프왕 왕수학 최상위 심화 3-1 에듀왕", link:"https://link.coupang.com/a/diVzDO", linkType:"coupang"},
-  jump32:{cat:"math", img:"3621ad34.png", subject:"수학", name:"점프왕 수학 최상위 3-2",
+  jump32:{cat:"math", img:"3621ad34.png", subject:"교과수학 · 최상위", name:"점프왕 수학 최상위 3-2",
     role:"현재 배우는 단원의 심화 + 사고력 확장", when:"하루 3장",
     pts:["학교 진도 맞춰 현행 + 살짝 선행 심화용으로 활용","한 문제씩 천천히 → 사고 과정 설명 연습","틀린 문제는 꼭 복기 → \"왜 틀렸는지\" 말하게 하기"],
     kw:"점프왕 왕수학 최상위 심화 3-2 에듀왕", link:"https://link.coupang.com/a/ehDhYGPNBI", linkType:"coupang"},
-  jump41:{cat:"math", img:"67075fb6.png", subject:"수학", name:"점프 왕수학 최상위 4-1",
+  jump41:{cat:"math", img:"67075fb6.png", subject:"교과수학 · 최상위", name:"점프 왕수학 최상위 4-1",
     role:"교과 개념을 바탕으로 심화 문제를 풀며 수학적 사고력과 문제 해결력을 키우는 교재", when:"심화 단계",
     pts:["기본 개념을 충분히 익힌 뒤 도전 → 심화 문제에 단계적으로 접근","어려운 문제는 바로 답을 보기보다 → 여러 방법으로 충분히 생각해보기","틀린 문제는 풀이 과정을 다시 확인 → 취약한 개념 보완"],
     kw:"점프왕 왕수학 최상위 심화 4-1 에듀왕", link:"https://link.coupang.com/a/f4uzpK1iqi", linkType:"coupang"},
-  dohyung:{cat:"math", img:"ext_51725.jpg", subject:"수학", name:"빨강 도형 (이것이 도형이다 D3)",
+  dohyung:{cat:"math", img:"ext_51725.jpg", subject:"도형 · 공간지각", name:"빨강 도형 (이것이 도형이다 D3)",
     role:"도형 감각 + 공간지각 능력 키우는 전용 교재", when:"하루 1~2장",
     pts:["연산과 별도로 꾸준히 병행해야 효과 있음","눈으로 이해 → 손으로 풀기 → 머리로 정리","도형은 \"감\"이라 장기전으로 천천히 반복"],
     kw:"빨강도형 이것이도형이다 D3 공간지각 씨투엠", link:"https://link.coupang.com/a/diVDFR", linkType:"coupang"},
-  kut:{cat:"math", img:"9f7cd169.jpg", subject:"수학", name:"KUT 기출 문제집 (경시 대비)",
+  kut:{cat:"math", img:"9f7cd169.jpg", subject:"경시 대비", name:"KUT 기출 문제집 (경시 대비)",
     role:"경시 유형 익히는 실전 문제 훈련용", when:"주 1회 · 모의고사 1회",
     pts:["시험 대비라기보다 사고력 확장용으로 접근","처음엔 시간 제한 없이 → 풀이 과정 집중","\"못 풀어도 괜찮다\"는 경험 주는 게 핵심"],
     kw:"KUT 경시 기출 고려대 수학학력평가 모의고사",
     link:"https://www.kutest.co.kr/book/book_list?cate=1412", linkType:"site"},
-  ssokssem:{cat:"math", img:"41ec08f5.jpg", subject:"수학", name:"하루 한장 쏙셈 5-1",
+  ssokssem:{cat:"math", img:"41ec08f5.jpg", subject:"연산 · 선행", name:"하루 한장 쏙셈 5-1",
     role:"교과 연산을 반복하며 계산력과 정확도를 탄탄하게 다지는 연산 교재", when:"하루 한 장",
     pts:["하루 정해진 분량씩 꾸준히 → 연산 루틴 유지하기","빠르게 푸는 것보다 → 실수 없이 정확하게 계산하기","반복 연산으로 계산을 익숙하게 → 교과 수학의 기본기 다지기"],
     kw:"쏙셈 하루한장 연산 미래엔 5-1", link:"https://link.coupang.com/a/f4tKCZIayq", linkType:"coupang"},
-  gaenyeom51:{cat:"math", img:"37827701.png", subject:"수학", name:"그림으로 개념 잡는 초등수학 5-1",
+  gaenyeom51:{cat:"math", img:"37827701.png", subject:"개념 수학", name:"그림으로 개념 잡는 초등수학 5-1",
     role:"그림과 인강으로 개념을 익히는 수학 개념 학습 교재", when:"주 1회 → 방학엔 매일",
     pts:["무료 인강 먼저 듣고 → 헷갈리는 개념 정리하기","공약수, 공배수 같은 단원은 → 인강으로 개념 다시 익히기","문제 풀이보다 → 개념을 설명할 수 있는지 확인하기"],
     kw:"그림으로개념잡는 개념 인강 5-1", link:"https://link.coupang.com/a/ehGhsqRv3Y", linkType:"coupang"},
-  ssen:{cat:"math", img:"ae2044ed.png", subject:"수학", name:"쎈 초등수학 4-2",
+  ssen:{cat:"math", img:"ae2044ed.png", subject:"교과수학 · 유형", name:"쎈 초등수학 4-2",
     role:"다양한 유형의 문제를 반복해서 풀며 교과 개념을 다지고 문제 해결력을 키우는 교재", when:"유형 반복",
     pts:["개념별 다양한 문제 유형 풀기 → 문제 유형에 익숙해지기","틀린 문제는 다시 풀어보며 → 부족한 개념과 유형 보완하기","기본부터 어려운 문제까지 단계적으로 → 응용력 키우기"],
     kw:"쎈 초등수학 유형 선행 4-2 좋은책신사고", link:"https://link.coupang.com/a/f4uULfsQ0G", linkType:"coupang"},
 
   /* ── 영어 ── */
-  evanmoor:{cat:"eng", img:"1dd25d4b.png", subject:"영어", name:"에반무어 1단계 (독해)",
+  evanmoor:{cat:"eng", img:"1dd25d4b.png", subject:"영어 독해", name:"에반무어 1단계 (독해)",
     role:"영어 독해 기본기 + 문장 이해력", when:"화·목",
     pts:["하루 1지문씩 가볍게 → 꾸준함이 핵심","해석보다 이해 중심으로 문제 풀기","영어로 생각하는 힘 키우기"],
     kw:"에반무어 Evan-Moor 독해 리딩 1단계", link:"https://link.coupang.com/a/dId3GO", linkType:"coupang"},
-  words1000:{cat:"eng", img:"a5d7bc60.jpg", subject:"영어", name:"1000 Basic English Words 1",
+  words1000:{cat:"eng", img:"a5d7bc60.jpg", subject:"영어 어휘", name:"1000 Basic English Words 1",
     role:"필수 단어 기초 체계 잡기", when:"월·수·금",
     pts:["단어만 외우지 말고 문장으로 연결","반복 회독이 핵심"],
     kw:"1000 베이직 잉글리시 워즈 어휘 단어", link:"https://link.coupang.com/a/eubJGV", linkType:"coupang"},
-  ort:{cat:"eng", img:"5012ad5b.jpg", subject:"영어", name:"ORT 10~12단계 (집중듣기)",
+  ort:{cat:"eng", img:"5012ad5b.jpg", subject:"집중듣기", name:"ORT 10~12단계 (집중듣기)",
     role:"집중듣기 — 듣기와 읽기를 연결하는 리딩 루틴", when:"2점 후반~3점 초반",
     pts:["같은 책 반복 → 자연스럽게 익히기","2점대 후반~3점대 초반 반복 중","레벨 욕심보다 '재미' 유지"],
     kw:"ORT 옥스포드 리딩트리 집중듣기 집듣 10 11 12단계", link:"", linkType:"none"},
-  epic:{cat:"eng", img:"f0bedf07.png", subject:"영어", name:"에픽(Epic) 온라인 도서관",
+  epic:{cat:"eng", img:"f0bedf07.png", subject:"리더스 · 온라인 도서관", name:"에픽(Epic) 온라인 도서관",
     role:"리더스 반복 — 부담 없이 영어책 접점을 늘리는 루틴", when:"리더스",
     pts:["레벨 욕심보다 '재미' 유지","만화 리더스 등 자율 독서로 부담 없이 즐기기","같은 책 반복 → 자연스럽게 익히기"],
     kw:"에픽 Epic 온라인도서관 리더스 영어독서", link:"https://www.getepic.com/", linkType:"site"},
-  viplib:{cat:"eng", img:"2dd7df7d.jpg", subject:"영어", name:"VIPKid 온라인 도서관",
+  viplib:{cat:"eng", img:"2dd7df7d.jpg", subject:"리더스 · 온라인 도서관", name:"VIPKid 온라인 도서관",
     role:"리더스 반복 — 부담 없이 영어책 접점을 늘리는 루틴", when:"리더스",
     pts:["레벨 욕심보다 '재미' 유지","듣기 + 읽기 연결","같은 책 반복 → 자연스럽게 익히기"],
     kw:"VIPKid 온라인도서관 리더스 영어독서",
     link:"https://kr.vipkid.com/website/account/signin?channel=K2000ZN", linkType:"site"},
-  vipkid:{cat:"eng", img:"5ad5357b.jpg", subject:"영어", name:"VIPKid 화상영어 (북미권 100%)",
+  vipkid:{cat:"eng", img:"5ad5357b.jpg", subject:"화상영어", name:"VIPKid 화상영어 (북미권 100%)",
     role:"실전 말하기 + 표현력 강화", when:"수·금 25분 (주 2회)",
     pts:["100% 북미 원어민 선생님과 1:1 수업","틀려도 말하게 하는 게 핵심","수업 전/후 예복습 포함 40~50분"],
     kw:"VIPKid 화상영어 원어민 북미 말하기 스피킹",
     link:"https://kr.vipkid.com/website/account/signin?channel=K2000ZN", linkType:"site"},
-  jipdeut2:{cat:"eng", img:"b992b735.png", subject:"영어", name:"집중듣기: 2점대 영어책",
+  jipdeut2:{cat:"eng", img:"b992b735.png", subject:"집중듣기", name:"집중듣기: 2점대 영어책",
     role:"2점대 영어책을 꾸준히 읽으며 리딩 실력과 영어 독해력을 한 단계 높이는 루틴", when:"AR 2점대",
     pts:["아이 수준에 맞는 2점대 책 위주로 → 부담 없이 리딩량 늘리기","모르는 단어에 매번 멈추기보다 → 문맥으로 내용 이해하며 읽기","다양한 책을 꾸준히 읽으며 → 어휘력과 문장 이해력 키우기"],
     kw:"집중듣기 집듣 2점대 AR 로빈힐 Robin Hill", link:"https://link.coupang.com/a/f4vtxyOvTM", linkType:"coupang"},
-  nangdok:{cat:"eng", img:"5d35b0e6.jpg", subject:"영어", name:"낭독하기: 2점대 영어책",
+  nangdok:{cat:"eng", img:"5d35b0e6.jpg", subject:"낭독", name:"낭독하기: 2점대 영어책",
     role:"영어책을 직접 소리 내어 읽으며 읽기 유창성과 리딩 자신감을 키우는 루틴", when:"AR 2점대",
     pts:["아이 수준에 맞는 책을 소리 내어 읽기 → 자연스럽게 읽는 연습","틀릴 때마다 바로 멈추기보다 → 문장 전체의 흐름을 살려 읽기","꾸준히 낭독하며 → 발음과 억양, 읽기 유창성 함께 키우기"],
     kw:"낭독 소리내어읽기 유창성 2점대 스플랫 Splat the Cat", link:"https://link.coupang.com/a/f4wm5TMNGK", linkType:"coupang"},
-  video:{cat:"eng", img:"8392c25a.jpg", subject:"영어", name:"영어 영상 (노출 영상 20선)",
+  video:{cat:"eng", img:"8392c25a.jpg", subject:"영어 노출", name:"영어 영상 (노출 영상 20선)",
     role:"영어를 공부가 아닌 일상 속에서 자연스럽게 익숙해지게 하는 영어 노출", when:"하루 30~60분",
     pts:["루틴에 넣지 않아도 될 만큼 기본이 된 습관","모든 내용을 이해하려 하기보다 → 소리와 표현에 익숙해지기","식사 시간 등을 활용해 꾸준히 → 부담 없이 노출량 늘리기"],
     kw:"영어영상 흘려듣기 노출 유튜브 20선",
@@ -818,7 +818,7 @@ const PHASES = [
     delta:null
   },
   {
-    id:"p2", tab:"p2", short:"5월~", cls:"p2", when:"STEP 2 · 5월~",
+    id:"p2", tab:"p2", short:"5월~7월", cls:"p2", when:"STEP 2 · 5월~7월",
     title:"기본은 몰아서 끝내고, 최상위에 집중",
     tagline:"기본응용과 최상위를 쪼개서 풀렸더니 <b>세월아 네월아</b>… 그래서 기본응용은 몰아서 끝내고<br><b>최상위만 집중</b>하는 구조로 바꿨어요. 어쩔 땐 1~2주 동안 한 문제집을 통째로 끝내기도 해요!",
     day:[
@@ -869,21 +869,21 @@ const GROWTH = [
   { title:"📐 수학 — 심화와 선행을 동시에", sum:"가장 많은 시간을 쓴, 이번 학년의 중심 과목이에요",
     steps:[
       {when:"3~5월", items:["더클셈 10권 · 바빠 연산 4-2 (연산 하루 10분)","수학리더 3-2 (교과 기본+응용 선행)","점프왕 최상위 <b>3-1</b> · 빨강도형 D3","KUT 기출 — 주 1회 모의고사"]},
-      {when:"5월~", items:["기본응용 <b class='new'>몰아서 끝내고 최상위만 집중</b>","점프왕 최상위 <b class='new'>3-1 → 3-2</b>, 하루 1바닥 → <b class='new'>3장</b>","<b class='new'>그림으로 개념 5-1 추가</b> (인강으로 개념)","연산 하루 10분 → <b class='new'>5분</b>"]},
+      {when:"5월~7월", items:["기본응용 <b class='new'>몰아서 끝내고 최상위만 집중</b>","점프왕 최상위 <b class='new'>3-1 → 3-2</b>, 하루 1바닥 → <b class='new'>3장</b>","<b class='new'>그림으로 개념 5-1 추가</b> (인강으로 개념)","연산 하루 10분 → <b class='new'>5분</b>"]},
       {when:"여름방학", items:["더클셈 <b class='new'>10권 → 11권(초6 과정)</b>","<b class='new'>쏙셈 5-1 추가</b>","교과 심화 <b class='new'>3-2 → 왕수학 최상위 4-1</b>","<b class='new'>쎈 4-2 추가</b> → 유형 반복"]}
     ],
     punch:"3월엔 <b>3학년 현행 심화</b>였는데 방학엔 <b>4학년 심화 + 5학년 연산</b>까지 왔어요. 그래도 1년 선행은커녕 반 학기 정도예요 — <b>개념만 빠르게 넘기지 않고 심화까지 챙기기 때문</b>이에요 😊"},
   { title:"🔤 영어 — 멈췄다가, 다시 시동", sum:"수학에 집중하는 동안 가장 뒤로 밀렸던 영역이에요",
     steps:[
       {when:"3~5월", items:["아침: 에반무어(화·목) · 1000 Words(월·수·금)","저녁: Epic 리더스 · 집중듣기 · 자율 독서","화상영어 VIPKid 주 2회(수·금 25분)","영어 영상은 <i>루틴에 넣지 않음 — 이미 기본이 됨</i>"]},
-      {when:"5월~", items:["<b class='new'>VIPKid 온라인 도서관 추가</b> → Epic과 병행","나머지는 그대로 유지 (수학 집중 시기)"]},
+      {when:"5월~7월", items:["<b class='new'>VIPKid 온라인 도서관 추가</b> → Epic과 병행","나머지는 그대로 유지 (수학 집중 시기)"]},
       {when:"여름방학", items:["<b class='new'>첫 AR 검사 — 2.7 / ZPD 2.4~3.4</b>","<b class='new'>집중듣기 2점대 시작</b> → 멈췄던 리딩 재가동","<b class='new'>낭독 2점대 시작</b> → 소리 내어 읽기","화상영어·도서관·영상은 그대로 유지"]}
     ],
     punch:"1년 가까이 제자리였던 영어를 <b>AR 검사를 계기로 다시 잡은 게 이번 방학의 가장 큰 변화</b>예요. 레벨 욕심보다 <b>거부감 없이 지속</b>하는 걸 우선했어요."},
   { title:"📚 국어 · 사회 · 과학 · 한자 — 요일로 나눠 꾸준히", sum:"매일 몰아서 하지 않고 요일 분산으로 부담을 없앴어요",
     steps:[
       {when:"3~5월", items:["국어 요일 루틴: 월 완자 / 화 문해력신문 / 수 한국사 / 목 4줄요약 / 금 세계사","과학 오투 3-1 주 2회 · 한국사·세계사 각 주 1회","한자 마법 급수한자 월·수·금"]},
-      {when:"5월~", items:["<b class='new'>용선생 한국사 시리즈 완료</b> → 수요일은 완자로 대체","수학 집중 시기라 <i>패스하는 날도 있었어요</i>","과학·한자는 그대로 유지"]},
+      {when:"5월~7월", items:["<b class='new'>용선생 한국사 시리즈 완료</b> → 수요일은 완자로 대체","수학 집중 시기라 <i>패스하는 날도 있었어요</i>","과학·한자는 그대로 유지"]},
       {when:"여름방학", items:["<b class='new'>하루한장 독해 3단계 투입</b> (수요일)","4줄요약 <b class='new'>세계위인 → 세계명작</b>","과학 <b class='new'>오투 3-1 → 3-2</b> (주말)"]}
     ],
     punch:"문제집이 많아 보여도 <b>하루에 하는 건 1과목</b>이에요. 겨울방학에 개념 문제집을 끝내둔 덕에 지금은 <b>유지 단계</b>라 시간 부담이 거의 없어요."}
@@ -1005,7 +1005,7 @@ function renderGrowth(){
 }
 
 /* 교재 전체 — 시기 뱃지 계산 */
-const PHASE_SHORT = ["3~5월", "5월~", "여름"];
+const PHASE_SHORT = ["3~5월", "5월~7월", "여름방학"];
 const BOOK_PHASES = {};
 PHASES.forEach((p, i) => p.books.forEach(sl => {
   const arr = (BOOK_PHASES[sl] = BOOK_PHASES[sl] || []);
