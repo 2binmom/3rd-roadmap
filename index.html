@@ -661,11 +661,6 @@ if ("scrollRestoration" in history) history.scrollRestoration = "manual";
    ══════════════════════════════════════════════════════════ */
 const BOOKS = {
   /* ── 수학 ── */
-  deokle:{cat:"math", img:"9599820c.png", subject:"연산 · 빠른 선행", name:"필즈 더클셈 (초5~6 과정)",
-    phaseLabel:"3월부터 쭈욱~",
-    role:"연산 속도 + 정확도 끌어올리는 상위 레벨 훈련용", when:"하루 1장",
-    pts:["학년보다 높은 연산으로 두뇌 체력 미리 만들어주기","매일 루틴으로 짧게 → 속도감 유지하는 용도","\"생각 없이 푸는 연산\"이 아니라 집중력 훈련용으로 활용"],
-    kw:"필즈 더클셈 연산 선행 심화", link:"", linkType:"none"},
   yeonsan42:{cat:"math", img:"1d4671eb.png", subject:"연산 · 보완", name:"바빠 교과서 연산 4-2",
     role:"교과 기반 연산을 안정적으로 다지는 기본기 교재", when:"하루 1바닥",
     pts:["분수 등 헷갈리는 부분 보완 → 개념 안정용 연산","개념 연결된 연산이라 실수 줄이기에 효과적","더클셈과 병행 → 속도 + 정확도 균형 잡기"],
@@ -815,6 +810,11 @@ const BOOKS = {
     role:"도형의 기초부터 각도·넓이까지 연습하는 초등 평면도형 총정리 교재", when:"하루 1~2장씩",
     pts:["시작 전 진단평가 → 약한 부분 위주로 풀기","삼각형 넓이를 구할 때 → 밑변과 높이를 그림에 표시하기","복잡한 도형의 넓이는 → 아는 도형으로 나눠 구하기"],
     kw:"바쁜초등학생 빠른 평면도형 5학년 이지스에듀", link:"https://www.coupang.com/vp/products/6518906735?itemId=14434044020&src=1139000&spec=10799999&lptag=AF9292549", linkType:"coupang"},
+  deokle:{cat:"math", img:"9599820c.png", subject:"연산 · 빠른 선행", name:"필즈 더클셈 (초5~6 과정)",
+    phaseLabel:"3월부터 쭈욱~",
+    role:"연산 속도 + 정확도 끌어올리는 상위 레벨 훈련용", when:"하루 1장",
+    pts:["학년보다 높은 연산으로 두뇌 체력 미리 만들어주기","매일 루틴으로 짧게 → 속도감 유지하는 용도","\"생각 없이 푸는 연산\"이 아니라 집중력 훈련용으로 활용"],
+    kw:"필즈 더클셈 연산 선행 심화", link:"", linkType:"none"},
   hanja63:{cat:"hanja", img:"hanja63.png", subject:"한자", name:"마법 급수한자 6급-3",
     role:"만화로 한자의 뜻과 소리를 익히는 6급 한자 검정 대비 교재", when:"월,수,금 1장씩",
     pts:["새 한자는 → 도입 만화를 읽고 뜻과 소리 말해 보기","복습할 때는 → 뜻과 소리를 가리고 한자만 보고 맞혀 보기","자주 헷갈리는 글자는 → 그 한자가 들어간 낱말과 함께 익히기"],
@@ -843,7 +843,7 @@ const PHASES = [
       ["🔤 영어(아침)","에반무어(화·목) · 1000 Words(월·수·금)","짧게 나눠서"],
       ["🌙 영어(저녁)","리더스(Epic) · 집중듣기 · 화상영어(수·금) · 자율 독서","레벨 욕심보다 <b>재미 유지</b>"]
     ],
-    books:["deokle","yeonsan42","leader32","jump31","dohyung","kut","otu31","hanguksa","yongsun","wanja","sinmun","yoyakWiin","hanja","evanmoor","words1000","ort","epic","vipkid","video"],
+    books:["yeonsan42","leader32","jump31","dohyung","kut","deokle","otu31","hanguksa","yongsun","wanja","sinmun","yoyakWiin","hanja","evanmoor","words1000","ort","epic","vipkid","video"],
     note:"<b>왜 학원 대신 엄마표인가요?</b><br>목동 학군지에서는 영어·수학 학원을 안 다니는 아이를 찾기가 더 어렵지만, ✔️ 학원 대신 놀이터에서 뛰어노는 시간을 더 좋아하고 ✔️ 집에서 공부하는 걸 훨씬 편해하고 ✔️ 엄마와 함께하며 자기주도 학습을 키워주고 싶어서 이 세 가지가 잘 맞았어요.<br><br>(2학년 때 필즈 6개월 다니다 그만두고, 잠시 내려놓았던 엄마표 수학도 다시 돌아왔어요!)<br><br>해보면서 느낀 건, <b>엄마표의 핵심은 '특별한 방법'이 아니라 '꾸준히 이어가는 루틴'</b>이라는 거예요.",
     delta:null
   },
@@ -866,7 +866,7 @@ const PHASES = [
       ["🔤 영어(아침)","에반무어(화·목) · 1000 Words(월·수·금)","그대로 유지"],
       ["🌙 영어(저녁)","<b>VIPKid 도서관 추가</b> · Epic · 집중듣기 · 화상영어(수·금)","레벨 욕심보다 재미 유지"]
     ],
-    books:["deokle","yeonsan42","jump32","kut","gaenyeom51","otu31","yongsun","wanja","sinmun","yoyakWiin","hanja","evanmoor","words1000","ort","epic","viplib","vipkid","video"],
+    books:["yeonsan42","jump32","kut","gaenyeom51","deokle","otu31","yongsun","wanja","sinmun","yoyakWiin","hanja","evanmoor","words1000","ort","epic","viplib","vipkid","video"],
     note:"<b>왜 최상위만 집중하게 됐나요?</b><br>교과 기본응용과 최상위를 쪼개서 풀게 했더니 세월아 네월아 풀더라고요… 그래서 <b>기본응용을 몰아서 끝낸 후 최상위만 집중</b>하는 구조로 바꿨어요. 시간 대비 효율이 훨씬 좋아졌습니다.<br><br>연산 선행이 필즈 덕분에 빨라져서, 바빠 연산 4-2는 <b>복습 선행</b>으로 돌리고 있어요.",
     delta:["교과 심화 <b>점프왕 3-1 → 3-2</b>, 하루 1바닥 → <b>하루 3장</b>으로 확대","<b>그림으로 개념 잡는 초등수학 5-1 추가</b> (주 1회, 나머진 방학 때)","수학리더 3-2 · 빨강도형 D3 <b>완료</b> → 루틴에서 내림","<b>용선생 한국사 시리즈 완료</b> → 국어 요일에서 완자로 대체","<b>VIPKid 온라인 도서관 추가</b> → Epic과 함께 리더스 확장","연산 시간 10분 → <b>5분</b>으로 단축"]
   },
@@ -888,7 +888,7 @@ const PHASES = [
       ["📚 영어(독서)","VIPKid 도서관 · 에픽 · 영어 영상","즐겁게 노출량 늘리기"],
       ["📖 국어·사회·과학","요일별 1과목씩 (월~주말)","부담 없이 <b>매일 다른 것</b>"]
     ],
-    books:["deokle","ssokssem","gaenyeom51","jump41","ssen","jipdeut2","nangdok","vipkid","viplib","epic","video","wanja","sinmun","dokhae3","yoyakMyeongjak","yongsun","otu32"],
+    books:["ssokssem","gaenyeom51","jump41","ssen","deokle","jipdeut2","nangdok","vipkid","viplib","epic","video","wanja","sinmun","dokhae3","yoyakMyeongjak","yongsun","otu32"],
     note:"<b>첫 AR 검사 결과 (2026. 7. 27.)</b><br><b>AR 2.7 / ZPD 2.4~3.4</b><br><br>수학에 집중하는 동안 영어를 거의 내려놓다시피 했더니 어느새 1년째 제자리걸음이었어요. 결과를 보고 나니 \"아… 이제 영어도 진짜 다시 해야겠다 🤣\" 싶더라고요.<br><br>참고로 열심히 진도를 나갔는데도 1년 선행은커녕 <b>아직 반 학기 정도 선행 중</b>이에요. 개념만 빠르게 넘기지 않고 심화까지 꼼꼼히 챙기다 보니 생각만큼 쭉쭉 나가지는 않더라고요.",
     delta:["연산 <b>더클셈 10권 → 11권(초6 과정)</b>","<b>하루 한장 쏙셈 5-1 추가</b> → 교과 연산 병행","교과 심화 <b>점프왕 3-2 → 왕수학 최상위 4-1</b>","<b>쎈 초등수학 4-2 추가</b> → 유형 반복으로 선행 다지기","<b>집중듣기·낭독 2점대 시작</b> → 1년 멈췄던 영어 리딩 재가동","국어 요일 루틴에 <b>하루한장 독해 3단계 · 4줄요약 세계명작</b> 투입","과학 <b>오투 3-1 → 3-2</b>"]
   },
@@ -910,7 +910,7 @@ const PHASES = [
       ["🈷️ 한자","마법 급수한자 6급-3","월·수·금 1장씩"],
       ["📖 국어·사회·과학","요일별 1과목씩 (월~주말)","부담 없이 <b>매일 다른 것</b>"]
     ],
-    books:["deokle","ssokssem52","jump42","ilsunwi51","ssen51","pyeongmyeon5","video","vipkid","jipdeut2","nangdok","viplib","epic","hanja63","wanja","sinmun","dokhae3","yoyakMyeongjak","yongsun","otu32"],
+    books:["ssokssem52","jump42","ilsunwi51","ssen51","pyeongmyeon5","deokle","video","vipkid","jipdeut2","nangdok","viplib","epic","hanja63","wanja","sinmun","dokhae3","yoyakMyeongjak","yongsun","otu32"],
     note:"<b>왜 2점대를 계속 반복하나요?</b><br>아직 소리 내서 읽을 때 중간중간 멈추는 부분이 있어서, 3점대로 넘어가는 건 조금 미루고 2점대를 무한 반복 중이에요. 하루 한 권 낭독은 꼭 챙기고 있고요.<br><br>수학은 처음엔 학교 진도에 맞춰 공부하다가 뒤늦게 황소를 준비하면서 진도를 좀 당겼어요. 황소 진도까지 따라잡진 못했고, 지금은 경빈이가 소화할 수 있는 속도로 하고 있어요.<br><br>원래는 응용 문제집 → 최상위 문제집 순서로 풀었는데, 5학년 과정에 들어가니 내용이 좀 더 복잡해지더라고요. 그래서 요즘은 어려워하는 단원만 개념서랑 기본·응용 문제집을 추가해서 한 번 더 짚고 넘어가고 있어요.",
     delta:["교과수학 <b>쎈 4-2 완료</b> → <b>왕수학 최상위 4-2</b>로 전환","<b>쏙셈 5-2 · 일순위 기본응용 5-1 · 쎈 5-1 · 평면도형 추가</b> → 5학년 과정 선행 다지기","영어 3점대 전환은 보류, <b>2점대 반복 지속</b>","한자 <b>6급-2 → 6급-3</b>으로 레벨업 (월·수·금)","국어 요일에 <b>하루한장 독해 3단계 유지</b>, 과학 <b>오투 3-2</b> 지속"]
   }
